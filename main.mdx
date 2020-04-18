@@ -1,0 +1,48 @@
+# Setup Gatsby with 🦹‍♂️ Twin + 💅 Styled Components
+
+[🦹‍♂️ Twin](https://github.com/ben-rogerson/twin.macro) lets you use Tailwind classes within any CSS-in-JS library.
+
+[💅 Styled Components](https://styled-components.com/) are visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress.
+
+---
+
+Install the NPM packages
+
+<NPMPackage name="twin.macro" />
+<NPMPackage name="gatsby-plugin-styled-components" />
+<NPMPackage name="styled-components" />
+
+---
+
+Install the Styled Components plugin in gatsby-config.js
+
+<GatsbyPlugin name="gatsby-plugin-styled-components" />
+
+---
+
+Import the Tailwind base styles using Gatsby browser
+
+<File
+  path="gatsby-browser.js"
+  content="https://gist.githubusercontent.com/ben-rogerson/6ab25a7ed7928fa5f18d63dc138c25e7/raw/c182a3cffcab121fc34a936b7acc29c462e0acda/gatsby-browser.js"
+/>
+
+---
+
+Configure Twin to use Styled Components
+
+<File path="babel-plugin-macros.config.js" content="https://gist.githubusercontent.com/ben-rogerson/6ab25a7ed7928fa5f18d63dc138c25e7/raw/a658a82b3ab99636f1679ee71598d7b42d471787/babel-plugin-macros.config.js" />
+
+---
+
+That's it, now it's ready to go!
+
+We'll also create an example page to play with Twin and Styled Components.
+
+<File path="src/pages/twin-sc-example.js" content="https://gist.githubusercontent.com/ben-rogerson/6ab25a7ed7928fa5f18d63dc138c25e7/raw/22aeb702fdc0af136ff687841fc391e5cec5e0e0/twin-styled-components-example.js" />
+
+---
+
+Read more about Twin in the repo readme:
+
+https://github.com/ben-rogerson/twin.macro
